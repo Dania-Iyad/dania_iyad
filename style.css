@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Mulish", sans-serif;
+}
+:root{
+    --gray-light:#7D7987;
+    --button: #458FF6;
+    --black: #00000000;
+}
+.h1{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+    color: var(--black);
+}
+.p{
+    font-size: 16px;
+    color: var(--gray-light);
+}
+.container { 
+    width: 80%; 
+    margin: auto; 
+    } 
+.flex { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    } 
+nav{
+    padding: 20px 0;
+}
+ul { 
+    list-style-type: none; 
+    } 
+a{ 
+    text-decoration: none; 
+    } 
+ul.flex { 
+    gap: 40px; 
+    } 
+.active{ 
+    font-weight: bold; 
+    }
+.nav-link{
+    font-size: 18px;
+    color: #1F1534;
+    text-transform: capitalize;
+    }
+.header-content{ 
+    max-width: 445px;
+}
+.header-content p{
+    font-size: 21px;
+    line-height: 32px;
+    color: var(--gray-light);
+    margin-top: 25px;
+    margin-bottom: 45px ;
+}
+.btn{
+    min-width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -moz-border-radius: 55px;
+    -ms-border-radius: 55px;
+    -o-border-radius: 55px;
+}
+.header-content .btn{
+    background-color: var(--button);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.header-img img{
+    width: 100%;
+}
