@@ -26,12 +26,18 @@ body{
 .container { 
     width: 80%; 
     margin: auto; 
-    } 
+} 
+header .container{
+    height: 100%;
+}
+header .flex{
+    height: 100%;
+}
 .flex { 
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    } 
+ } 
 nav{
     padding: 20px 0;
 }
@@ -80,4 +86,7 @@ ul.flex {
 }
 .header-img img{
     width: 100%;
+}
+header{
+    height: 100%;
 }
