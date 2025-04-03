@@ -11,6 +11,7 @@ body{
     --gray-light:#7D7987;
     --button: #458FF6;
     --black: #00000000;
+    --white: white;
 }
 .h1{
     font-size: 48px;
@@ -75,7 +76,7 @@ ul.flex {
     border: none;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: var(--white);
 }
 .header-img img{
     width: 100%;
