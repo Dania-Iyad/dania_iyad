@@ -1,0 +1,38 @@
+@media screen and (max-width: 992px){
+    #menu_check:checked ~ ul{
+        display: flex;
+    }
+    .close{
+        display: none;
+    }
+    #menu_check:checked ~ label .open{
+        display: none;
+    }
+    #menu_check:checked ~ label .close{
+        display: inherit;
+    }
+    label .open{
+        display: inherit;
+    }
+    ul.flex{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 81px;
+        background-color: rgba(255, 255, 255, 0.105);
+        width: 100%;
+        justify-content: center;
+        left: 0;
+        backdrop-filter: blur(10px);
+        padding: 20px 0;
+    }
+    header{
+        margin: 3rem 0;
+    }
+    header .flex{
+        flex-direction: column-reverse;
+    }
+    .header-content{
+        max-width: 100%;
+    }
+}
