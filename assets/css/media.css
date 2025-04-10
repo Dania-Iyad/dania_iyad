@@ -31,8 +31,12 @@
     }
     header .flex{
         flex-direction: column-reverse;
+        gap: 3rem;
     }
     .header-content{
+        max-width: 100%;
+    }
+    .services .card{
         max-width: 100%;
     }
 }

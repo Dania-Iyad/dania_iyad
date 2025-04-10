@@ -44,10 +44,14 @@ nav{
     width: 100%;
     top: 0;
     background-color: white;
+    z-index: 99999999999;
 }
 ul { 
     list-style-type: none; 
-    } 
+}
+section{
+    padding: 4rem 0;
+} 
 a{ 
     text-decoration: none; 
     } 
@@ -123,9 +127,61 @@ ul.flex {
 }
 .cards.flex{
     flex-wrap: wrap;
+    gap: 37px;
+}
+.card img{
+    flex: 2;
+    margin-bottom: 22px;
 }
 .card{
+    flex: ;
+    top: 80px;
     text-align: start;
-    padding: 37px 54px; 
+    padding: 37px 54px;
     max-width: 350px;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px 0 rgba(229, 233, 246, 40);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}   
+.services{
+    position: relative;
+}
+.services .cards-bg{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.services .btn{
+    background-color: white;
+    border-color: var(--button);
+    color: var(--button);
+    font-size: 18px;
+}
+.testimonials{
+    margin: auto;
+    color: white;
+    max-width: 1120px;
+    border-radius: 24px;
+    background: linear-gradient(#67C3F3 , #5A98F2);
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+h2{
+    text-align: center;
+}
+.testimonials .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials .content , .testimonials .qoute{
+    width: ;
 }
