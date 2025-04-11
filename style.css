@@ -134,10 +134,8 @@ ul.flex {
     margin-bottom: 22px;
 }
 .card{
-    flex: ;
-    top: 80px;
     text-align: start;
-    padding: 37px 54px;
+    padding: 37px 4px;
     max-width: 350px;
     margin-bottom: 3rem;
     background-color: #ffffff;
@@ -154,6 +152,12 @@ ul.flex {
 .services .cards-bg{
     position: absolute;
     left: 0;
+    z-index: -1;
+}
+.services .points1{
+    position: absolute;
+    top: 41%;
+    right: 120px;
     z-index: -1;
 }
 .services .btn{
@@ -175,6 +179,10 @@ ul.flex {
 }
 h2{
     text-align: center;
+    margin-bottom: 20px;
+}
+.line{
+    margin-bottom: 77px;
 }
 .testimonials .container{
     display: flex;
@@ -182,6 +190,33 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-.testimonials .content , .testimonials .qoute{
-    width: ;
+
+.testimonials.flex{
+    gap: 111px;
+}
+.testimonials .content.flex{
+    gap: 2rem;
+    justify-content: flex-start;
+}
+.testimonials .content , .testimonial .qoute{
+    width: 50%;
+}
+.testimonials{
+    position: relative;
+}
+.testimonials .point2{
+    position: absolute;
+    top: -19px;
+    right: -40px; 
+}
+.testimonials .point3{
+    position: absolute;
+    bottom: 30px;
+    left: -50px; 
+    z-index: -1;
+}
+.testimonials .iconpoint{
+    position: absolute;
+    left: 42%;
+    bottom: -50px;
 }
