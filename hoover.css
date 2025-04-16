@@ -1,0 +1,13 @@
+.bg-btn-light{
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.bg-btn-light:hover{
+    color: rgb(25, 135, 84) !important;
+    background-color: #fff !important;
+}.circle{
+    width: 75px;
+    height: 75px;
+}
+.bg-success-light{
+    background-color: #ecf9f0;
+}
