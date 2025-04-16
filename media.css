@@ -15,6 +15,7 @@
         display: inherit;
     }
     ul.flex{
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 81px;
