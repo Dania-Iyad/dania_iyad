@@ -130,6 +130,11 @@ ul.flex {
 .services svg{
     margin: 26px 0 33px 0;
 }
+.services p{
+    margin: auto;
+    width: 925px;
+    margin-bottom: 80px;
+}
 .cards{
     margin-top: 5 rem;
 }
@@ -162,17 +167,39 @@ ul.flex {
     left: 0;
     z-index: -1;
 }
+.services .card{
+    margin: auto;
+}
+.services .space{
+    margin: 58px 52px 47px 36px !important;
+}
 .services .points1{
     position: absolute;
     top: 41%;
     right: 120px;
     z-index: -1;
 }
+.services img{
+    margin-bottom: 19.5px;
+}
+.services p{
+    color: #7D7987;
+    margin-top: 10px;
+    margin-bottom: 47px;
+}
 .services .btn{
     background-color: white;
     border-color: var(--button);
     color: var(--button);
     font-size: 18px;
+    margin-top: 69px;
+}
+.articles .btn{
+    background-color: white;
+    border-color: var(--button);
+    color: var(--button);
+    font-size: 18px;
+    margin-top: 69px;
 }
 .bg-graidient{
     background: linear-gradient(#67C3F3 , #5A98F2);
@@ -233,8 +260,28 @@ h2{
     width: 350px;
     padding: 0;
 }
+.articles .Rectangle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 79px;
+    margin-top: 26px;
+}
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.arrow-container:hover .arrow {
+    transform: translateX(6px) scale(1.1);
+    color: #007bff; 
+}
 .articles .card img{
     width: 100%;
+}
+.articles p{
+    color: #7D7987;
+    margin-top: 12px;
+    margin-bottom: 25px;
 }
 .card-body{
     padding: 24px 33px 35px;
@@ -258,14 +305,7 @@ h2{
 .articles .card{
     max-width: 100%;
 }
-.articles .btn{
-    border-color: var(--button);
-    background-color: #fff;
-    color: var(--button);
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-}
+
 .footer .container{
     margin: auto;
     display: flex;
@@ -393,6 +433,10 @@ h2{
     color:var(--button);
     font-size: 18px;
     border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 .download .h2{
     display: flex;

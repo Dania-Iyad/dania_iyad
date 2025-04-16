@@ -49,8 +49,10 @@
         width: 100%;
     }
     .articles .card{
-        width: 50%;
+        width: 75%;
+        margin: auto;
     }
+    
     .articles .flex{
         gap: 2rem;
     }
