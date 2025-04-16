@@ -39,4 +39,28 @@
     .services .card{
         max-width: 100%;
     }
+    .services .cards-bg{
+        width: 100%;
+    }
+    .testimonials .flex{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .testimonial .content , .testimonial .qoute {
+        width: 100%;
+    }
+    .articles .card{
+        width: 50%;
+    }
+    .articles .flex{
+        gap: 2rem;
+    }
+    .footer .footer-header{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width : 768px){
+    .articles .card{
+        width: 10  0%;
+    }
 }
