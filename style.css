@@ -16,6 +16,7 @@ body{
 .btn:hover {
     background-color: var(--button);
     color: white;  
+    border-color: var(--button);
   }
 .h1{
     font-size: 48px;
@@ -32,6 +33,21 @@ body{
     max-width: 1247px;
     margin: auto; 
 } 
+.open {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;   
+    height: 24px;  
+    cursor: pointer;
+  }
+.close{
+    margin: auto;
+    width: 24px;   
+    height: 24px;  
+    cursor: pointer;
+}
 header .container{
     height: 100%;
 }
@@ -71,6 +87,10 @@ ul.flex {
 .active{ 
     font-weight: bold; 
 }
+.header .hp{
+    left: 0;
+    bottom: -50px;
+}
 .nav-link{
     font-size: 18px;
     color: #1F1534;
@@ -80,6 +100,11 @@ ul.flex {
     display: none;
  }
  header{
+    display: flex;
+    justify-content: space-between; /* تخلي الأيقونة على اليمين واللوجو على اليسار */
+    align-items: center;            /* توسيط العناصر عموديًا */
+    padding: 20px;
+    background-color: #fff;
     height: 100vh;
 }
 .header-content{ 
@@ -104,6 +129,11 @@ ul.flex {
     -o-border-radius: 55px;
     flex: 1;
 }
+.btn:hover {
+      background-color: var(--button);
+      transform: scale(1.05); 
+      color: white;
+    }
 .header-content .btn{
     background-color: var(--button);
     border: none;
@@ -132,6 +162,7 @@ ul.flex {
     margin: 26px 0 33px 0;
 }
 .services p{
+    color: #7D7987;
     margin: auto;
     width: 925px;
     margin-bottom: 80px;
@@ -159,7 +190,11 @@ ul.flex {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}   
+} 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}  
 .services{
     position: relative;
 }
@@ -183,10 +218,11 @@ ul.flex {
 .services img{
     margin-bottom: 19.5px;
 }
-.services p{
+.services .card p{
     color: #7D7987;
     margin-top: 10px;
     margin-bottom: 47px;
+    max-width: 261px;
 }
 .services .btn{
     background-color: white;
@@ -242,13 +278,13 @@ h2{
 }
 .testimonials .point2{
     position: absolute;
-    top: -19px;
-    right: -40px; 
+    top: -20px;
+    right: -50px; 
 }
 .testimonials .point3{
     position: absolute;
     bottom: 30px;
-    left: -50px; 
+    left: -3rem; 
     z-index: -1;
 }
 .testimonials .iconpoint{
@@ -262,9 +298,8 @@ h2{
     padding: 0;
 }
 .articles .Rectangle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    margin-left: 46%;
     margin-bottom: 79px;
     margin-top: 26px;
 }
@@ -306,7 +341,9 @@ h2{
 .articles .card{
     max-width: 100%;
 }
-
+.articles .btn{
+    margin-left: 40%;
+}
 .footer .container{
     margin: auto;
     display: flex;
@@ -343,6 +380,19 @@ h2{
     margin-top:  22px;
     margin-bottom: 31px;
 }
+.footer .content{
+    display: flex;
+    gap: 10rem;
+}
+.footer .ele{
+    bottom: 0;
+    left: 0;
+}
+.footer svg{
+    z-index: -1;
+    top: 50px;
+    right: -6rem;
+}
 .footer .f-list{
     margin: auto;
     gap: 2rem;
@@ -371,19 +421,19 @@ h2{
     transform: translate(-50%, -50%);
     width: 16px;
     height: 19px;
-    }
+}
   .hero {
     padding: 60px 40px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
   .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1273px;
     margin: auto;
     flex-wrap: wrap;
     gap: 40px;
@@ -392,8 +442,12 @@ h2{
   .hero-image img {
     max-width: 100%;
     height: auto;
+    margin-right: 40px;
   }
-  
+  .hero .btn:hover , .services .btn:hover{
+    background-color: var(--button);
+    color: white;
+  }
   .hero-text {
     max-width: 500px;
     text-align: left;
@@ -427,17 +481,12 @@ h2{
     flex-wrap: wrap;
     gap: 40px;
 }
-  .hero .btn {
+.hero .btn {
     background-color: #fff;
     padding: 10px 20px;
     border: 1px solid var(--button);
     color:var(--button);
     font-size: 18px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
 }
 .download .h2{
     display: flex;
@@ -450,6 +499,23 @@ h2{
 .download p{
     margin-top: 31px;
 }
+
+.download .btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #1e90ff;
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+
+  .download .btn:hover {
+    background-color: #1e90ff;
+    color: white;
+  }
+
+ .download .btn:hover svg {
+    transform: translateY(4px);
+    fill: white;
+  }
 .download .btn{
     background-color: white;
     padding: 10px 20px;

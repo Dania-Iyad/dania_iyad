@@ -60,6 +60,23 @@
     .footer .footer-header{
         margin-bottom: 30px;
     }
+    .hero img{
+        width: 100%;
+    }
+    .download img{
+        width: 100%;
+    }
+    .footer .content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .footer .container{
+        flex-direction: column;
+    }
+    .footer{
+        width: 100%;
+    }
 }
 @media screen and (max-width : 768px){
     .articles .card{
