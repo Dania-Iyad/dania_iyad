@@ -444,7 +444,7 @@ h2{
     height: auto;
     margin-right: 40px;
   }
-  .hero .btn:hover , .services .btn:hover{
+  .hero .btn:hover , .services .btn:hover , .articles .btn:hover{
     background-color: var(--button);
     color: white;
   }
